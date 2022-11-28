@@ -1,0 +1,27 @@
+{% extends 'dreamit/basic.html'%}
+
+{% block title %} Content Page {% endblock %}
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css_style/content_style.css' %}">
+{% endblock %}
+
+{% block body %}
+<section class="container">
+    <div class="heading">
+        <h1>Class 10</h1>
+        <h4>Chapter 1 :- Real Numbers</h4>
+    </div>
+
+
+    <div class="container content_info">
+        <ul>
+            <div class="items">
+                <li>Introduction</li>
+                <a href="https://www.youtube.com/watch?v=eUfBUKKEDcM">https://www.youtube.com/watch?v=eUfBUKKEDcM</a>
+            </div>
+        </ul>
+    </div>
+</section>
+{% endblock %}

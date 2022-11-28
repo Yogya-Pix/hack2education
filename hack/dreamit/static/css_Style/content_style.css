@@ -1,0 +1,27 @@
+.heading h1{
+    margin-bottom: 2rem;
+}
+
+.heading h4{
+    margin-bottom: 2rem;
+}
+
+.items{
+    margin-bottom: 1rem;
+}
+
+.items li{
+    list-style: disc;
+    font-size: 20px;
+    color: greenyellow;
+}
+
+.items a{
+    padding-left: 2rem;
+    color: rgb(32, 198, 239);
+    text-decoration: underline;
+}
+
+.items a:hover{
+    color: violet;
+}

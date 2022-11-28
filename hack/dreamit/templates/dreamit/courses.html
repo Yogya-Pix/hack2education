@@ -1,0 +1,31 @@
+{% extends 'dreamit/basic.html'%}
+
+{% block css %}
+<style>
+    .courses{
+        margin-top: 1rem;
+    }
+</style>
+{% endblock %}
+{% block title %} Dream Realm - Courses {% endblock %}
+
+{% load static %}
+
+{% block body %}
+<section class="courses">
+    <div class="container courses_container">
+        {% for item in allcourse %}
+        <article class="course">
+            <div class="course_img">
+                <img src="/media/{{item.image}}">
+            </div>
+            <div class="course_info">
+                <h4>{{item.cou_title}}</h4>
+                <p>{{item.desc}}</p>
+                <a href="/subcourse" class="btn btn-primary">Learn More</a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
